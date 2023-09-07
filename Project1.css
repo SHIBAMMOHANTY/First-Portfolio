@@ -1,0 +1,211 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Create a gradient background */
+body {
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+/* Style the header section with a similar background */
+header {
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+    text-align: center;
+    padding: 60px; /* Increase padding for a larger header */
+}
+
+/* Style the navigation menu in the header */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Add a smooth color transition effect */
+}
+
+nav ul li a:hover {
+    color: #0078d4; /* Change link color on hover */
+}
+
+/* Style the header content */
+.header-content {
+    max-width: 800px; /* Limit content width for better readability */
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px; /* Add some spacing below the heading */
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* Style the About Section */
+#about {
+    background-color: #fff;
+    padding: 60px;
+}
+
+/* Style the About Me text */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+    margin-left: 40px;
+}
+
+#about h2 {
+    font-size: 24px;
+}
+
+/* Style the Skills Section */
+#skills {
+    background-color: #f4f4f4;
+    padding: 60px;
+}
+
+.skills-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skills-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-content li {
+    margin-bottom: 10px;
+}
+
+/* Style the Projects Section */
+#projects {
+    background-color: #fff;
+    padding: 60px;
+}
+
+.projects-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.projects-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style the Resume Section */
+#resume {
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding: 60px;
+    text-align: center;
+}
+
+#resume h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#resume a {
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the Contact Section */
+#contact {
+    background-color: #f4f4f4;
+    padding: 60px;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-content a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+/* Style the Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Keyframe animation for the gradient background */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
